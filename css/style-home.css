@@ -1,0 +1,595 @@
+body{
+    background-color: rgba(14, 126, 160, 0.957);
+    background-image: url(../img/pag22.jpg);
+   
+  }
+  
+  /* الشريط العلوي الي يحتوي على جميع العناصر */
+  .toppage{
+    
+    
+    display: flex;
+    width: 98%;
+    height: 50px;
+    position: fixed;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  .logo{
+    position: absolute;
+    width: 4%;
+    height: 50px;
+    left: 0%;
+  
+  }
+  
+  .name{
+    position: absolute;
+    right: 82%;
+    width: 14%;
+    height: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+    
+  }
+  .name a.n1{
+    position: relative;
+    left: 10%;
+    color: red;
+    font-size:25px;
+    
+    
+    
+    
+  
+  }
+  .name a.n2{
+    position: relative;
+    left: 11%;
+    color: white;
+    font-size:30px;
+    
+  
+  }
+  .searchteap{
+    position: absolute;
+    right: 3%;
+    width: 28%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .par-option{
+    position: absolute;
+    right: 0.2%;
+    width: 4%;
+    height: 50px;
+    right: 0%;
+  
+    
+    
+  }
+  
+  
+  .option {
+    position: absolute;
+    right: 32%;
+    width: 50%;
+    height: 50px;
+    /* overflow: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+    
+    
+  }
+  
+  /* Navigation links */
+  .option a {
+    
+    margin-left:  10px;
+    margin-right: 10px;
+    height: 90%;
+  
+    /* float: left; */
+    
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 18%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Add a background color on mouse-over */
+  .option a:hover {
+    background-color: rgb(00 00 00 /20%);
+    
+    border-bottom: 3px solid red;
+  }
+
+  .home-hover{
+    background-color: rgb(00 00 00 /20%);
+    
+    border-bottom: 3px solid red;
+  }
+  
+  /* Style the current/active link */
+  /* .navbar a.active {
+    background-color: #04AA6D;
+  } */
+  
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .option a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+  }
+
+  
+  
+ 
+  
+  
+  .test4{
+    background-color:rgba(135, 15, 15, 0.486);
+    box-shadow:1px 1px 10px 1px  rgba(23, 23, 23, 0.468) ;
+    height: 89%;
+    width: 3.5%;
+    position: absolute;
+    top:10%;
+    right:1.5%;
+    border-bottom:white solid 3px;
+    border-radius: 0.5rem;
+  }
+
+  .btnpar-position{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+  
+  
+  .test5{
+    position: absolute;
+    bottom: 2%;
+    right: 2.3%;
+  }
+  
+  
+  
+   
+  
+  
+  
+  .content{
+   
+    bottom: 0;
+    height: 98%;
+    display: flex;
+    width: 92%;
+    position: absolute;
+    flex-wrap: wrap;
+    right: 0;
+   
+    /* box-shadow: 10px 10px  rgba(249, 247, 247, 0.2); */
+    /* background-color: blue; */
+    overflow:auto;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    justify-content: center;
+    margin-left:5%;
+  
+  
+  }
+  
+  /* ____________________________________________________________________________________________________ */
+  /* Style buttons */
+  .btn {
+    background-color: rgba(127, 255, 212, 0);
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    
+    font-size:30px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    margin-top: 10px;
+    margin-left: 10%;
+    /* position: absolute; */
+    /* left: 95%;
+    top: 4%; */
+  
+  }
+  .btnpar {
+    
+    background-color: rgba(127, 255, 212, 0);
+    border: none; 
+    color: white; 
+    
+    font-size:20px; 
+    cursor: pointer; 
+    margin-top: 10px;
+    margin-left: 10%;
+    transition: 0.5s;
+  }
+  .btnpar:hover{
+  
+    transform: scale(1.2);
+  }
+ 
+
+  
+  /* ============================================== */
+  
+  /* شريط السكرول */
+  
+
+  
+  .html::-webkit-scrollbar{
+    width: 4.8px;
+    
+  }
+  .html::-webkit-scrollbar-thumb{
+    
+    border-radius: 80px;
+  }
+  
+  
+  /* ============================================== */
+  
+  
+  .menu-icon {
+     width : 45px ;
+      height : 45px ;
+       background : #730b0bc0 ;
+        color : rgb(255, 255, 255) ;
+         text-align : center ;
+          line-height : 50px ;
+           font-size : 20px ; 
+           z-index : 2 ; 
+           border-radius : 10px ;
+            cursor : pointer ;
+             transition : 0.2s linear ;
+  }
+  
+  
+  .menu-icon:hover {
+     opacity : 0.9 ;
+      transform : scale ( 1.1 ) ;
+       background : #ff494984 ;
+  }
+  
+  /* ============================================== */
+  
+  /* شريط البحث */
+  
+  .cont{
+    
+    width: 70%;
+    height: 100%;
+    /* min-height: 100vh; */
+    /* padding: 5%; */
+    /* background-color:blue ; */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .search-bar{
+  max-width:700px ;
+  width: 100%;
+  background: rgba(5, 5, 5, 0.275);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 8px 20px;
+  backdrop-filter: blur(4px) saturate(180%);
+  
+  }
+  .search-bar input{
+    background: transparent;
+    flex:1 ;
+    border: 0;
+    outline: none;
+    /* padding: 24px 20px; */
+    font-size: 10px;
+    color: white;
+  }
+  ::placeholder{
+    color: white;
+  }
+  
+  .search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #58629b00;
+    cursor: pointer;
+  }
+   .btnsearch{
+  
+    background-color: rgba(127, 255, 212, 0);
+  
+    color: white; /* White text */
+    
+    
+    cursor: pointer; 
+    
+  
+   }
+
+
+
+
+
+
+   /* _______ */
+
+   .mySlides {display: none ; object-fit: cover;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  height: 550px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  margin-right: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+/* .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -3px;
+    width: 700px;
+    height: 200px;
+    text-align: center;
+    margin-bottom: -50px;
+    background-color: rgba(0, 0, 0, 0.333);
+    border-radius: 20px;
+    
+} */
+
+/* Number text (1/3 etc) */
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+  /* position: absolute; */
+  margin-bottom: 3px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* -------------------------------------------------------------------------- */
+/* mune icon */
+.mune-icon{
+            padding : 14px 20px ; 
+            margin : auto ;
+            color : #f1f1f1 ;
+            max-width : 80% ;
+            display : flex ; 
+            align-items : center ;
+                justify-content : space-between ;
+        }
+        .menu-icon {
+            width : 50px ;
+            height : 50px ;
+            background : #5c0303fc ;
+            color : rgb(255, 255, 255) ;
+            text-align : center ;
+            line-height : 50px ;
+            font-size : 20px ; 
+            z-index : 2 ; 
+            border-radius : 10px ;
+            cursor : pointer ;
+            transition : 0.2s linear ;
+        }
+        
+        
+        .menu-icon:hover {
+            opacity : 0.9 ;
+            transform : scale ( 1.1 ) ;
+            background : #ff494984 ;
+        }
+        
+        /* ============================================== */
+        
+        /* شريط البحث */
+        
+        .cont{
+            
+            width: 70%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        .search-bar{
+            max-width:700px ;
+            width: 100%;
+            background: rgba(5, 5, 5, 0.275);
+            display: flex;
+            align-items: center;
+            border-radius: 60px;
+            padding: 8px 20px;
+            backdrop-filter: blur(4px) saturate(180%);
+        
+        }
+        .search-bar input{
+            background: transparent;
+            flex:1 ;
+            border: 0;
+            outline: none;
+            font-size: 10px;
+            color: white;
+        }
+        ::placeholder{
+            color: white;
+        }
+        
+        .search-bar button{
+            border: 0;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background: #58629b00;
+            cursor: pointer;
+        }
+        .btnsearch{
+            background-color: rgba(127, 255, 212, 0);
+            color: white; /* White text */
+            cursor: pointer; 
+        }
+
+        pre{
+            padding: 0;
+            margin: 0;
+        }
+        .text_title{
+          
+          position: absolute;
+          top: 200px;
+          margin-left: -2px;
+          justify-content: left;
+          align-content: space-around;
+          justify-items: start;
+          align-items: center;
+          padding: 50px;
+          /* background-image: url(../img/pag22.jpg); */
+          margin-top: -18px;
+          background-color: rgba(0, 0, 0, 0.068);
+          
+          border-radius: 20px;
+
+           
+        }
+        .date {
+            background:url("../images/date-bg.png") no-repeat scroll left top transparent;
+            color:rgb(255, 255, 255);
+            float:left;
+            font-size:1.167em;
+            font-weight:400;
+            line-height:1em;
+            margin-left:100px;
+            margin-top: -50px;
+            text-align:center;
+            width:69px;
+            padding:5px 0 8px;
+            position: absolute;
+            
+            }
+            
+            .date span {
+                display:block;
+                font-size:2.357em;
+                line-height:1em;
+                }
+            h2.title  {
+            color:#C7B8A3;
+            font-size:2.0em;
+            font-weight:200;
+            line-height:2.0em;
+            text-transform:none;
+            /* padding:15px 0 0; */
+            margin-left: 20px;
+            
+            position: absolute;
+           
+            }
+            
+            .text_title_paragraph{
+              font-size: medium;
+              color: rgb(255, 255, 255);
+              margin-top: 100px;
+              margin-left: 20px;
+            }
+  
+  
+ 
+  
+  
+  
+  
+  
+    
+  
+  

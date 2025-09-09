@@ -1,0 +1,553 @@
+body{
+    min-height: 5000px;
+    background-color: black;  
+    background-image: url(../img/pag22.jpg);
+}
+
+.toppage{
+    
+    
+    display: flex;
+    width: 98%;
+    height: 50px;
+    position: fixed;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  .logo{
+    position: absolute;
+    width: 4%;
+    height: 50px;
+    left: 0%;
+  
+  }
+  
+  .name{
+    position: absolute;
+    right: 82%;
+    width: 14%;
+    height: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+    
+  }
+  .name a.n1{
+    position: relative;
+    left: 10%;
+    color: red;
+    font-size:25px;
+    
+    
+    
+    
+  
+  }
+  .name a.n2{
+    position: relative;
+    left: 11%;
+    color: white;
+    font-size:30px;
+    
+  
+  }
+  .searchteap{
+    position: absolute;
+    right: 3%;
+    width: 28%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .par-option{
+    position: absolute;
+    right: 0.2%;
+    width: 4%;
+    height: 50px;
+    right: 0%;
+  
+    
+    
+  }
+  
+  
+  .option {
+    position: absolute;
+    right: 32%;
+    width: 50%;
+    height: 50px;
+    /* overflow: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+    
+    
+  }
+  
+  /* Navigation links */
+  .option a {
+    
+    margin-left:  10px;
+    margin-right: 10px;
+    height: 90%;
+  
+    /* float: left; */
+    
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 18%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Add a background color on mouse-over */
+  .option a:hover {
+    background-color: rgb(00 00 00 /20%);
+    
+    border-bottom: 3px solid red;
+  }
+
+  .anime-hover{
+    background-color: rgb(00 00 00 /20%);
+    
+    border-bottom: 3px solid red;
+  }
+  
+  /* Style the current/active link */
+  /* .navbar a.active {
+    background-color: #04AA6D;
+  } */
+  
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .option a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+  }
+
+.img-top{
+    position: absolute;
+    z-index: 3;
+}
+
+.black{
+    position: absolute;
+    top: 40px;
+    /* background-color: #95929200; */
+    background-image: url(../img/BACnamjpg.jpg);
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    
+}
+
+.black2{
+    position: relative;
+    background-color: #634caf;
+    width: 100%;
+    height: 440px;
+    z-index: 2;
+    
+}
+
+.words{
+    position:absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 4;
+    color: rgb(253, 251, 251);
+    font-size: 40px;
+}
+.words h3{
+  color: rgb(255, 255, 10);
+}
+
+.tape-name-parts{
+    /* border-top:solid white 3px; */
+    width: 100%;
+    height:40px;
+    position:sticky;
+    top: 60px;
+    margin-top: 5px;
+    justify-content: center;
+    background:linear-gradient(to right , rgba(91, 15, 15, 0.688),rgba(93, 6, 6, 0.5));
+    box-shadow:1px 20px 10px 1px  rgba(9, 9, 10, 0.468) ;
+    z-index: 100;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+
+}
+
+.anime-name{
+    position: absolute;
+    height:100%;
+    width: 23%;
+    left: 5%;
+    float: left;    background-image: url(../img/BACnamjpg.jpg);
+    border-left: solid white 2px;
+    border-right: solid white 2px;
+}
+
+.tape-name-parts-icons{
+    position: absolute;
+    height:100%;
+    width: 10%;
+    color: white;
+    font-size: 20px;
+    left: 70%;
+    top: 20%;
+    align-items: center;
+    text-align: center;
+
+}
+
+.tape-name-parts-icons2{
+    position: absolute;
+    height:100%;
+    width: 14%;
+    color: white;
+    font-size: 20px;
+    left: 57%;
+    top: 20%;
+   /* background-color: #4CAF50; */
+   text-align: center;
+    align-items: center;
+
+}
+
+.part{
+    position: absolute;
+    height:100%;
+    width: 10%;
+    right: 2.5%;
+}
+
+.contenr{
+    border: rgb(198, 114, 36) solid 3px;
+    transition: 0.5s;
+    height: 200x;
+    width: 250px;
+    position: relative;
+    margin-top:40px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.contenr:hover{
+    transform: scale(1.4);
+}
+
+/* .name{
+    background-color: azure;
+    width: 100%;
+    height: 10%;
+    text-align: right;
+    color: brown;
+    right:0 ;
+    position: absolute;
+    top: 60%;
+} */
+
+h1{
+
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+    padding : 0;
+    margin: 0;
+    line-height: 45px;
+    color: rgba(242, 243, 240, 0.938);
+    text-align: center;
+    z-index: 1008;
+}
+
+.dropbtn {
+    background-color: #1d1f75;
+    color: white;
+    padding: 10px 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    width: 110px;
+  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: 0.5s;
+  border-radius: 20px;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.5s;
+  border-radius: 20px;
+  text-align: center;
+ 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #6d726f;
+  border-radius: 20px;
+  
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} 
+
+/* الشريط العلوي الي يحتوي على جميع العناصر */
+
+
+/* تنسيق الفديوهات */
+.card{
+position: relative;
+width: 235px;
+height: 140px;
+margin: 0;
+margin-top: 30px;
+margin-left: 10px;
+border-radius: 20px;
+display: inline-block;
+transition: 0.5s;
+z-index: 1;
+background-image: url(../img/card-back/blu2.jpg);
+
+
+}
+
+.card .face{
+position: absolute;
+width: 100%;
+height: 100% ;
+backface-visibility: hidden;
+border-radius: 10px;
+overflow: hidden;
+transition: .5s;
+box-shadow: 2px 2px 2px 2px rgba(10, 12, 138, 0.541);
+} 
+
+.card .front{
+transform: perspective(600px) rotateY(0deg);
+
+}
+.card .front img{
+position: absolute;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.card .front .video-p{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.card .front h3{
+position: absolute;
+bottom: 0;
+width: 100%; 
+padding: 0;
+margin: 0;
+line-height: 45px;
+color: rgba(242, 243, 240, 0.938);
+background:linear-gradient(to top , rgba(246, 239, 239, 0.684),rgba(66, 7, 7, 0.063));
+text-align: right;
+}
+
+.card .front h4{
+position: absolute;
+bottom: 0;
+width: 100%; 
+padding: 0;
+margin: 0;
+line-height: 45px;
+color: rgba(242, 243, 240, 0.938);
+text-align: right;
+} 
+
+.card:hover{
+    transform: scale(1.1);
+}
+/* ____________________________________________________________________________________________________ */
+/* Style buttons */
+.btn {
+background-color: rgba(127, 255, 212, 0);
+border: none; /* Remove borders */
+color: white; /* White text */
+font-size:30px; /* Set a font size */
+cursor: pointer; /* Mouse pointer on hover */
+margin-top: 10px;
+margin-left: 10%;
+}
+
+.btnpar {
+background-color: rgba(127, 255, 212, 0);
+border: none; /* Remove borders */
+color: white; /* White text */
+font-size:20px; /* Set a font size */
+cursor: pointer; /* Mouse pointer on hover */
+
+transition: 0.5s;
+}
+
+.btnpar:hover{
+font-size: 22px;
+}
+
+.btnpar2 {
+background-color: rgba(127, 255, 212, 0);
+border: none; /* Remove borders */
+color: rgb(226, 111, 111); /* White text */
+font-size:20px; /* Set a font size */
+cursor: pointer; /* Mouse pointer on hover */
+margin-top: 10px;
+margin-left: 10%;
+transition: 0.5s;
+}
+
+.btnpar2:hover{
+font-size: 30px;
+}
+
+
+/* ___________________________________________________________________________________________________________ */
+/*  */
+
+/* ايقونة البار في الهيد */
+
+.mune-icon{
+    padding : 14px 20px ; 
+    margin : auto ;
+    color : #f1f1f1 ;
+    max-width : 80% ;
+    display : flex ; 
+    align-items : center ;
+        justify-content : space-between ;
+}
+.menu-icon {
+    width : 50px ;
+    height : 50px ;
+    background : #5c0303fc ;
+    color : rgb(255, 255, 255) ;
+    text-align : center ;
+    line-height : 50px ;
+    font-size : 20px ; 
+    z-index : 2 ; 
+    border-radius : 10px ;
+    cursor : pointer ;
+    transition : 0.2s linear ;
+}
+
+
+.menu-icon:hover {
+    opacity : 0.9 ;
+    transform : scale ( 1.1 ) ;
+    background : #ff494984 ;
+}
+
+/* ============================================== */
+
+/* شريط البحث */
+
+.cont{
+    
+    width: 70%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.search-bar{
+    max-width:700px ;
+    width: 100%;
+    background: rgba(5, 5, 5, 0.275);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 8px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+
+}
+.search-bar input{
+    background: transparent;
+    flex:1 ;
+    border: 0;
+    outline: none;
+    font-size: 10px;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #58629b00;
+    cursor: pointer;
+}
+.btnsearch{
+    background-color: rgba(127, 255, 212, 0);
+    color: white; /* White text */
+    cursor: pointer; 
+}
+
+pre{
+    padding: 0;
+    margin: 0;
+}
